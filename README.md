@@ -1,7 +1,19 @@
 ## Adtoniq for PHP
 Version Adtoniq-PHP-1.0.0
 
-#### Production Steps:
+#### What this code does:
+
+This PHP repository consists of several pieces:
+
+1) The Adtoniq for PHP library required to integrate with Adtoniq services. This is in the `src` directory. Prior to integrating with Adtoniq, you should contact Adtoniq at support@adtoniq.com to obtain an Adtoniq API key.
+
+2) An example website showing how to integrate Adtoniq. This is in the `example` directory.
+
+3) PHP Unit tests for the Adtoniq library. This is in the `tests` directory.
+
+Adtoniq for PHP implements the server-to-server communications required between your webserver and Adtoniq. Once a day, Adtoniq will initiate communications with your webserver using a secure protocol, to transmit the latest JavaScript required to ensure Adtoniq continues functioning as new ad block rules are added, or ad blockers are enhanced with new capabilities. In addition, once you are live with Adtoniq, Adtoniq will monitor your website to determine if ad blockers are adding new filter list rules specifically to block ads on your website, and if they are, Adtoniq will immediately send your site an update to ensure your advertising is not blocked. These updates sent by Adtoniq are cached between updates from Adtoniq - you can read more about caching below.
+
+#### Installation Steps:
 
 1) Place the contents of the `/src` folder into the new project, preferably a library or includes folder.
 
