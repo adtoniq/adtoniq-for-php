@@ -30,6 +30,8 @@ $adtoniq_config = array(
 	);
 ```
 
+Don't have an API key? Contact Adtoniq at support@adtoniq.com to get an API key. 
+
 4) Finally, on any page where ads appear, add the following code somewhere within the `<body>` tag:
 
 ```
