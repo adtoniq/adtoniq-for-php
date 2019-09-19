@@ -155,11 +155,11 @@ class Adtoniq {
 		return $this->_getJavascript();
 	}
 
-	/** Returns the HTML that should be inserted into the body section of the website
+	/** Returns the HTML that should be inserted into the body section of the website, if any. This may be blank.
 	 * @return String The code that should be inserted into the body section
 	 */
 	public function getBodyCode() {
-		return "<iframe id='aq-ch' src='//static-42andpark-com.s3.amazonaws.com/html/danaton3.html' width='1' height='1' style='width:1px;height:1px;position:absolute;left:-1000;' frameborder=0></iframe>";
+		return "";
 	}
 
 	// Public getter and setters
